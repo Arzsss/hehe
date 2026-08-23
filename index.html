@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,98 +12,86 @@
 }
 body {
     min-height: 100vh;
-    overflow: hidden;
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #ff758c, #ff7eb3);
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 25px 15px;
 }
 /* CARD */
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 430px;
-    max-height: 90vh;
-    padding: 30px 22px;
-    text-align: center;
-    background: rgba(255,255,255,0.15);
+    margin: auto;
+    background: rgba(255,255,255,0.16);
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255,255,255,0.3);
     border-radius: 28px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
-    position: relative;
-    z-index: 5;
+    padding: 30px 22px;
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.2);
 }
-/* FIRST PAGE */
+/* HEART */
 .heart {
-    font-size: 70px;
-    animation: heartbeat 1.2s infinite;
+    text-align: center;
+    font-size: 60px;
     margin-bottom: 15px;
+    animation: heartbeat 1.3s infinite;
 }
+/* TITLE */
 h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-.subtitle {
-    font-size: 16px;
-    line-height: 1.6;
+    text-align: center;
+    font-size: 27px;
     margin-bottom: 25px;
 }
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-button {
-    border: none;
-    border-radius: 50px;
-    padding: 14px 28px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
-#yes {
-    background: white;
-    color: #ff4f81;
-}
-#no {
-    background: rgba(0,0,0,0.2);
-    color: white;
-}
-/* LETTER */
-#letter {
-    display: none;
-}
-.letter-title {
-    font-size: 25px;
-    margin-bottom: 18px;
-}
-.text-box {
-    max-height: 55vh;
-    overflow-y: auto;
-    text-align: left;
-    padding: 5px 8px;
-    line-height: 1.8;
+/* LONG TEXT */
+.text {
     font-size: 15px;
-    scrollbar-width: thin;
+    line-height: 1.85;
+    text-align: left;
 }
-.text-box p {
+.text p {
     margin-bottom: 18px;
 }
+/* FINAL TEXT */
 .final {
     text-align: center;
     font-size: 21px;
     font-weight: bold;
-    margin-top: 25px;
+    line-height: 1.6;
+    margin-top: 30px;
 }
-/* HEART ANIMATION */
+/* WHATSAPP BUTTON */
+.whatsapp {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 50px;
+    background: white;
+    color: #ff4f81;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.whatsapp:active {
+    transform: scale(0.95);
+}
+/* SMALL TEXT */
+.small {
+    text-align: center;
+    margin-top: 13px;
+    font-size: 12px;
+    opacity: 0.75;
+}
+/* FLOATING HEART */
 .floating-heart {
     position: fixed;
     bottom: -30px;
     pointer-events: none;
     animation: floatUp linear forwards;
-    z-index: 1;
+    z-index: -1;
 }
 @keyframes heartbeat {
     0%,100% {
@@ -126,81 +114,87 @@ button {
 </style>
 </head>
 <body>
-<!-- PERTANYAAN -->
-<div class="container" id="question">
-    <div class="heart">❤️</div>
-    <h1>Will you be my girlfriend?</h1>
-    <div class="subtitle">
-        I have something to tell you...
-        <br>
-        and I've been thinking about it for a while.
+<div class="container">
+    <div class="heart">
+        ❤️
     </div>
-    <div class="buttons">
-        <button id="yes" onclick="showLetter()">
-            YES! 💕
-        </button>
-        <button id="no">
-            NO 😭
-        </button>
-    </div>
-</div>
-<!-- SURAT -->
-<div class="container" id="letter">
-    <div class="heart">💌</div>
-    <div class="letter-title">
-        For you...
-    </div>
-    <div class="text-box">
+    <h1>
+        For You...
+    </h1>
+    <div class="text">
         <p>
-            gw bingung ngomong ke lu gmn, 
-sumpah akhir akhir ni kepikiran bgt,
-gw jg sebenarnya ga mau mendem lama lamaaa, 
-sry baru ngomong skrg karena gatau mau ngomongnya gmn,
-dan sebenernya udah dari sebelum masuk LPK ini gw emg dh ada rasa sm u cmn yaa gitu i cant reach u out, 
-dan mungkin ni waktu yg tepat to tell u what i feel,
-i respect ur feeling if u dont like me, 
-w jg gada larangan tuk maksa u buat ad feel to me, 
-and i understand jarak kita jauh dan jg skill gw dalam comms jelek,
-tp i'll try to fix my comms skill, ik ini ga gentle bgtt,
-jadii yaa i just want to say
-
+            gw bingung ngomong ke lu gimana,
+            sumpah akhir-akhir ini kepikiran banget.
+        </p>
+        <p>
+            gw juga sebenarnya ga mau mendem lama-lamaaa.
+            sry baru ngomong sekarang karena gatau
+            mau ngomongnya gimana.
+        </p>
+        <p>
+            dan sebenernya udah dari sebelum masuk LPK ini
+            gw ada rasa.
+            cmn yaa gitu,
+            I can't reach out to you.
+        </p>
+        <p>
+            dan mungkin ini waktu yang tepat
+            to tell you what I feel.
+        </p>
+        <p>
+            I respect your feelings if you don't like me.
+            gw juga gada larangan buat maksa u
+            buat punya feelings yang sama ke gw.
+        </p>
+        <p>
+            and I understand jarak kita jauh
+            dan skill gw dalam comms jelek.
+        </p>
+        <p>
+            but I'll try to fix my communication skill.
+            gw bakal coba buat memperbaiki itu.
+        </p>
+        <p>
+            I know this isn't gentle banget,
+            dan mungkin cara gw ngomong ini
+            juga nggak sempurna.
+        </p>
+        <p>
+            tapii yaa...
+            I just want to say
+            what I've been feeling all this time.
         </p>
         <div class="final">
-            may i be ur boyfriend muf for 1 more time?
+            I want to go back together.
+            <br><br>
+            Can we? ❤️
         </div>
+    </div>
+    <!--
+    GANTI NOMOR DI BAWAH
+    Contoh:
+    628123456789
+    JANGAN pakai:
+    +628123456789
+    -->
+    <a
+        class="whatsapp"
+        href="https://wa.me/628123456789"
+        target="_blank"
+    >
+        💌 Talk to me on WhatsApp
+    </a>
+    <div class="small">
+        whatever your answer is,
+        thank you for reading this. ❤️
     </div>
 </div>
 <script>
-/* TOMBOL NO KABUR */
-const noButton = document.getElementById("no");
-function moveButton() {
-    const maxX =
-        window.innerWidth - noButton.offsetWidth - 20;
-    const maxY =
-        window.innerHeight - noButton.offsetHeight - 20;
-    const x = Math.random() * maxX;
-    const y = Math.random() * maxY;
-    noButton.style.position = "fixed";
-    noButton.style.left = x + "px";
-    noButton.style.top = y + "px";
-}
-noButton.addEventListener("mouseover", moveButton);
-noButton.addEventListener("touchstart", function(e) {
-    e.preventDefault();
-    moveButton();
-});
-/* TAMPILKAN SURAT */
-function showLetter() {
-    document.getElementById("question").style.display = "none";
-    document.getElementById("letter").style.display = "block";
-    for (let i = 0; i < 35; i++) {
-        setTimeout(createHeart, i * 100);
-    }
-}
-/* HATI */
 function createHeart() {
-    const heart = document.createElement("div");
-    heart.className = "floating-heart";
+    const heart =
+        document.createElement("div");
+    heart.className =
+        "floating-heart";
     const hearts = [
         "❤️",
         "💕",
@@ -210,7 +204,11 @@ function createHeart() {
         "💘"
     ];
     heart.innerHTML =
-        hearts[Math.floor(Math.random() * hearts.length)];
+        hearts[
+            Math.floor(
+                Math.random() * hearts.length
+            )
+        ];
     heart.style.left =
         Math.random() * 100 + "vw";
     heart.style.fontSize =
