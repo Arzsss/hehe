@@ -3,221 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SERIUS INI 😾</title>
+
+<title>Beloved</title>
+
 <style>
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
     min-height: 100vh;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    background: #000;
     color: white;
-    padding: 25px 15px;
+    font-family: Arial, sans-serif;
 }
-/* BOX */
-.container {
+
+.home {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.content {
     width: 100%;
-    max-width: 430px;
-    margin: auto;
-    background: rgba(255,255,255,0.16);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255,255,255,0.3);
-    border-radius: 28px;
-    padding: 30px 22px;
-    box-shadow:
-        0 20px 60px rgba(0,0,0,0.2);
+    max-width: 400px;
 }
-/* HEART */
-.heart {
-    text-align: center;
-    font-size: 60px;
-    margin-bottom: 15px;
-    animation: heartbeat 1.3s infinite;
-}
-/* TITLE */
-h1 {
-    text-align: center;
-    font-size: 27px;
+
+.gif {
+    width: 100%;
+    max-width: 300px;
+
+    border-radius: 15px;
+
     margin-bottom: 25px;
 }
-/* LONG TEXT */
-.text {
-    font-size: 15px;
-    line-height: 1.85;
-    text-align: left;
-}
-.text p {
-    margin-bottom: 18px;
-}
-/* FINAL TEXT */
-.final {
-    text-align: center;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 1.6;
-    margin-top: 30px;
-}
-                            .  /* TOMBOL KE WA */
-.whatsapp {
-    display: block;
-    width: 100%;
-    margin-top: 30px;
-    padding: 15px;
-    border-radius: 50px;
-    background: white;
-    color: #ff4f81;
-    text-decoration: none;
-    text-align: center;
-    font-size: 17px;
-    font-weight: bold;
-    transition: 0.2s;
-}
-.whatsapp:active {
-    transform: scale(0.95);
-}
-                          /* SMALL TEXT */
-.small {
-    text-align: center;
-    margin-top: 13px;
-    font-size: 12px;
-    opacity: 0.75;
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
 }
 
-                      /* FLOATING HEART */
-    
-.floating-heart {
-    position: fixed;
-    bottom: -30px;
-    pointer-events: none;
-    animation: floatUp linear forwards;
-    z-index: -1;
+p {
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 30px;
 }
-@keyframes heartbeat {
-    0%,100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.15);
-    }
+
+.button {
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    color: white;
+    background: transparent;
+
+    border: 1px solid white;
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    letter-spacing: 2px;
+
+    transition: 0.3s;
 }
-@keyframes floatUp {
-    from {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(-110vh) rotate(360deg);
-        opacity: 0;
-    }
+
+.button:hover {
+    background: white;
+    color: black;
 }
+
 </style>
 </head>
+
 <body>
-<div class="container">
-    <div class="heart">
-        ❤️
-    </div>
-    <h1>
-        ini serius
-    </h1>
-    <div class="text">
+
+<div class="home">
+
+    <div class="content">
+
+        <img
+            src="windah.gif"
+            class="gif"
+            alt="GIF"
+        >
+
+        <h1>🦧.</h1>
+
         <p>
-            gw bingung ngomong ke lu gimana,
-            sumpah akhir-akhir ini kepikiran banget.
+            Ada sesuatu yg ingin gw tanya
         </p>
-        <p>
-            gw juga sebenarnya ga mau mendem lama-lamaaa.
-            sry baru ngomong sekarang karena gatau
-            mau ngomongnya gimana.
-        </p>
-        <p>
-            dan sebenernya udah dari sebelum masuk LPK ini
-            gw ada rasa.
-            cmn yaa gitu,
-            I can't reach out to you.
-        </p>
-        <p>
-            dan mungkin ini waktu yang tepat
-            to tell you what I feel.
-        </p>
-        <p>
-            I respect your feelings if you don't like me.
-            gw juga gada larangan buat maksa u
-            buat punya feelings yang sama ke gw.
-        </p>
-        <p>
-            and I understand jarak kita jauh
-            dan skill gw dalam comms jelek.
-        </p>
-        <p>
-            but I'll try to fix my communication skill.
-            gw bakal coba buat memperbaiki itu.
-        </p>
-        <p>
-            I know this isn't gentle banget,
-            dan mungkin cara gw ngomong ini
-            juga nggak sempurna.
-        </p>
-        <p>
-            tapii yaa...
-            I just want to say
-            what I've been feeling all this time.
-        </p>
-        <div class="final">
-            May i be ur boyfriend for 1 more time muf?
-            <br><br>
-            付き合ってください ich liebe dich ( belajar dri anak jerman )
-        </div>
+
+        <a
+            href="page2.html"
+            class="button"
+        >
+            INI SERIUS real no fake !!
+        </a>
+
     </div>
 
-<!-- WA -->
-    <a
-        class="whatsapp"
-        href="https://wa.me/6282134313243"
-        target="_blank"
-    >
-        🤝 Sambel itu sayuran
-    </a>
-    <div class="small">
-        whatever ur answer is,
-        thank you fo readinh
-    </div>
 </div>
-<script>
-function createHeart() {
-    const heart =
-        document.createElement("div");
-    heart.className =
-        "floating-heart";
-    const hearts = [
-        "❤️",
-        "💕",
-        "💗",
-        "💖",
-        "💓",
-        "💘"
-    ];
-    heart.innerHTML =
-        hearts[
-            Math.floor(
-                Math.random() * hearts.length
-            )
-        ];
-    heart.style.left =
-        Math.random() * 100 + "vw";
-    heart.style.fontSize =
-        (15 + Math.random() * 25) + "px";
-    heart.style.animationDuration =
-        (3 + Math.random() * 4) + "s";
-    document.body.appendChild(heart);
-    setTimeout(() => {
-        heart.remove();
-    }, 7000);
-}
-setInterval(createHeart, 800);
-</script>
+
 </body>
 </html>
